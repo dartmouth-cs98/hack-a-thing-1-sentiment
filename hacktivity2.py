@@ -44,7 +44,7 @@ def print_result(sentiment_result, entities_result, filename):
 
     sorted_entities = sorted(entity_dict.items(), key=operator.itemgetter(1), reverse=True)
 
-    print('These are the most important key words in your document, ordered from most important to least important:')
+    print('These are the most important key words in your document, ordered from most important to least important')
 
     for entity in sorted_entities:
         print('----------')
@@ -69,6 +69,13 @@ def analyze(filename):
 
 
 if __name__ == '__main__':
+    # parser = argparse.ArgumentParser(
+    #     description=__doc__,
+    #     formatter_class=argparse.RawDescriptionHelpFormatter)
+    # parser.add_argument(
+    #     'filename',
+    #     help='The filename of the text you\'d like to analyze.')
+    # args = parser.parse_args()
 
     print("*************************************************")
     print("* Welcome to the Sentiment and Entity Analyzer! *")
