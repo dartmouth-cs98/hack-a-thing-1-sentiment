@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "green-wares-123004",
+  "private_key_id": "18f01ab781d85c588e59f0a008cab3dcd60e3101",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXFNZwDVERUg2q\nJhs9G/XwzCJQRuAB8EmLfzGvCQ3Fr5fzWLq6mSzc6SBpxnK+NblN+HLP/qppFvYx\nCP6DeIhsYfCh1+O6G5xcajzBGiVEEowndUb5aG3bnEpyz4MriRCB/lIfesYAMK/Y\ntMmlg3F77zu8jxWnlDwrkt5EKkDgtSZfDn+dFlKBTG6VezqUT/hKGPI70U2Ph/SN\nbov/8g7KWCev/jmcuP82k40OIfHIqMHdZllZTt7++fkqxVd3eUSB69beoqOzp/7w\nJLUcxqbrqAQ5JmAr0O71aqbw1g2r2gkwmQs+AqbtscCEGeS3PhKLVoO6+hhUBDI7\njPsUmxOrAgMBAAECggEAFxql7mN/0dx+m0h8pJPcV4GWLglvBsZJIDMJo0PVtual\n6/4cEO9jYleoo7Qtn0EmJroJm05AAAn3aE0PChBolzvuHXSTgep1YXgIDrZASo+z\nfomaljAhnPWtCahA7uxKWax4JemKW3rfaOgCwUTda/LG9/pm2RmTXRrpxWjEj16z\n1EHDTfulaTKOyAEVD1FfRdtuyQphQeZjCr+lagkuK0E5V9j0EhSLpNImcIhtaaAL\ns+K3NqVt8607FZOaySGNEAZQL7QTT5S9CdhA+gRjYEfkaHkZgEpCNQbhnSpEde8T\nkxekDN29S7dcvMWO5zWcmHHk0S3nAvzuhEX3cQiYAQKBgQDvSu2cP0qtU1OuU0Gi\nK5I5vrBqGky6sZIrsV5eDci0heby6jnbZ7woB/tJq8VZcHa9lLvc+9h+7P8iAUAG\nYPl7Mfb20hqKe2PoTHtHyGSr0oafTYQk6d4yAGLpZj/5JWE2E7jFWEYevEIZwoJL\n6E2zKdQmx4hpkQJDJxYJeZLOaQKBgQDmGSlXKE5uUAJaDnK4ZQQyEEFhkXm5++/J\nZnAsbiPRYPkvNM+SK12BUGuitHBznYYvxvpfg/wGuI4V5X7nUNBvEr4tNkR/fKC4\nb7AD8B1rzRWWXJjZwKXY6RA55z6/ko/Aam6PCuhhcwMgNLVtSh7HmNY+lawmAIlx\nXQdj+B828wKBgQDHxmxdN9HmplyEe2meNHYd03+A9Xf9nWYFKE06hJN9cxT+1GF9\nNTu2yAMY3FkkdGoNmHDG61MxlDbkctq6+JcQLQSbx4j0+FLOi5uYsEqr0FUoBhU+\npCkm4X+yj/T00io4dXqa9zmDS3R8ARG6wbSs0U0XGxpd1/xlh+oz+tV/kQKBgAP6\nWWGdW8XCclf2OfuAG5N1/nteVXlmpp2XvMa33Lyo7YXoZtJDF6m9py636d3F0mUP\nDpMKKBhBposwXYJIPmI9M7Z6YrLFh83IeIWI6ClN8VqZHTdegj9+v/4QRmBveza7\nYE/uw1ez8lDjOGO8TU3sEYAhfEln5vhjwFX1Gy0LAoGAUS+cvnLTxtxg38vZab3l\nJClmrIzeZZQ/qx3sEVMd15oGA0E8X6qEUzFqKm+0Shw9si9Q8hyBEnFQs8ajIher\n6a9CSwvmtsTj3bek8KgBIrwiuvDUollwZJD+t95vNQqMC4krbO7JOv/Zt3KztY8y\ndWSHaS5jqHTD2HD+3JAnijc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-7y7z59a4m8do@green-wares-123004.iam.gserviceaccount.com",
+  "client_id": "100105339381887147944",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-7y7z59a4m8do%40green-wares-123004.iam.gserviceaccount.com"
+}
