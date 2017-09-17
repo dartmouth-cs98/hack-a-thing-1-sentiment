@@ -1,11 +1,18 @@
 """Demonstrates how to make a simple call to the Natural Language API."""
 
-import argparse
-import operator
+# import operator
 
-from google.cloud import language
-from google.cloud.language import enums
-from google.cloud.language import types
+# from google.cloud import language
+# from google.cloud.language import enums
+# from google.cloud.language import types
+
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+
+from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QDialog
+
+
 
 def print_result(sentiment_result, entities_result, filename):
     score = sentiment_result.document_sentiment.score
@@ -48,6 +55,7 @@ def print_result(sentiment_result, entities_result, filename):
         print('----------')
         print('Word: {}\nType: {}\nImportance: {}'.format(entity[0], entity[1][1], entity[1][0]))
 
+    
 def analyze(filename):
     """Run analysis request on text within a passed filename."""
     client = language.LanguageServiceClient()
@@ -65,10 +73,20 @@ def analyze(filename):
 
 
 if __name__ == '__main__':
-    print("*************************************************")
-    print("* Welcome to the Sentiment and Entity Analyzer! *")
-    print("************************************************* \n")
 
-    filename = raw_input("Which file would you like to analyze? ")
 
-    analyze(filename)
+    # print("*************************************************")
+    # print("* Welcome to the Sentiment and Entity Analyzer! *")
+    # print("************************************************* \n")
+
+    # filename = raw_input("Which file would you like to analyze? ")
+    
+    app = QApplication(sys.argv)
+    gui = QWidget()
+    text, ok_pressed =  QInputDialog.getText(gui, "Sentiment and Entity Analyzer","*************************************************\n*         Welcome to the Sentiment and Entity Analyzer!         *\n*************************************************\n\n Which file would you like to analyze?")
+    if ok_pressed:
+        filename = text
+        analyze(filename)
+    sys.exit()
+
+
