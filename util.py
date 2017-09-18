@@ -1,5 +1,5 @@
 """
-Helper functions to extract text from .doc and .pdf attributed to bufx
+Helper functions to extract text from .doc and .pdf attributed to David Burke
 https://gist.github.com/bufke/8798262#file-document_to_text-py
 """
 from subprocess import Popen, PIPE

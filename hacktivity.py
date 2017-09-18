@@ -1,5 +1,3 @@
-"""Demonstrates how to make a simple call to the Natural Language API."""
-
 import operator
 
 from google.cloud import language
@@ -49,22 +47,20 @@ def display_result(sentiment_result, entities_result):
     sent_window.exec_()
 
     ent_string = "********** ENTITY ANALYSIS **********\n" + \
-        "These are the 10 most important key words in your document, ordered from most important to least important:"
+        "Expand to see the important key words in your document, ordered from most important to least important"
     sorted_entities = sorted(entity_dict.items(), key=operator.itemgetter(1), reverse=True)
+    ent_details = ""
 
-    counter = 1
     for entity in sorted_entities:
-        if counter > 10:
-            break
         word = entity[0].encode('utf-8')
         type = entity[1][1]
         importance = entity[1][0]
-        ent_string += "\n----------\n"
-        ent_string += "Word: {}\nType: {}\nImportance: {:.4f}".format(word, type, importance)
-        counter += 1
+        ent_details += "\n----------\n"
+        ent_details += "Word: {}\nType: {}\nImportance: {:.4f}".format(word, type, importance)
     ent_window = QMessageBox()
     ent_window.setWindowTitle("Sentiment and Entity Analyzer")
     ent_window.setText(ent_string)
+    ent_window.setDetailedText(ent_details)
     ent_window.exec_()
 
 
@@ -82,22 +78,13 @@ def analyze(filename):
 
     display_result(sentiment_result, entities_result)
 
+
 if __name__ == '__main__':
-
-    # print("*************************************************")
-    # print("* Welcome to the Sentiment and Entity Analyzer! *")
-    # print("************************************************* \n")
-
-    # filename = raw_input("Which file would you like to analyze? ")
-    
     app = QApplication(sys.argv)
     gui = QWidget()
     welcome = QMessageBox()
     welcome.setWindowTitle("Sentiment and Entity Analyzer")
-    welcome.setText("*************************************************\n"
-                    "* Welcome to the Sentiment and Entity Analyzer! *\n"
-                    "*************************************************\n"
-                    "Please choose a pdf or doc file.")
+    welcome.setText("Welcome to the Sentiment and Entity Analyzer!\nPlease choose a pdf or doc file.")
     welcome.exec_()
 
     files = QFileDialog.getOpenFileName(gui, "Sentiment and Entity Analyzer")
